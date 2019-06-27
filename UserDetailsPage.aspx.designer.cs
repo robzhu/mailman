@@ -11,7 +11,7 @@ namespace Mailman
 {
 
 
-    public partial class Contact
+    public partial class UserDetailsPage
     {
     }
 }
