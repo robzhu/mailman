@@ -13,6 +13,42 @@ namespace Mailman {
     public partial class ManageUsers {
         
         /// <summary>
+        /// textFirstName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox textFirstName;
+        
+        /// <summary>
+        /// textLastName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox textLastName;
+        
+        /// <summary>
+        /// textEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox textEmail;
+        
+        /// <summary>
+        /// buttonAddUser control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton buttonAddUser;
+        
+        /// <summary>
         /// manageUsers_List control.
         /// </summary>
         /// <remarks>

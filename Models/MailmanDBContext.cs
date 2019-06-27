@@ -21,6 +21,19 @@ namespace Mailman.Models
             return true;
         }
 
+        public User AddNewUser(string firstName, string lastName, string email)
+        {
+            var user = new User()
+            {
+                FirstName = firstName,
+                LastName = lastName,
+                EmailAddress = email,
+            };
+            Users.Add(user);
+            SaveChanges();
+            return user;
+        }
+
         public MailingList CreateList(string name, string description)
         {
             // TODO: better validation
