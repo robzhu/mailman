@@ -26,10 +26,6 @@
                             <asp:LinkButton ID="buttonUnsubscribe" runat="server" OnCommand="buttonUnsubscribe_Command" CommandArgument="<%#: Item.UserID %>">
                                 Unsubscribe
                             </asp:LinkButton>
-                            <%--
-                            <asp:LinkButton ID="listDelete" runat="server" OnCommand="listDelete_Click" CommandArgument="<%#: Item.MailingListID %>">
-                                Delete
-                            </asp:LinkButton>--%>
                         </div>
                     </ItemTemplate>
                     <ItemSeparatorTemplate>
