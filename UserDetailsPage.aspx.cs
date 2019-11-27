@@ -18,7 +18,7 @@ namespace Mailman
             if (string.IsNullOrEmpty(idFromQueryString)) return;
             int id = -1;
             if (!int.TryParse(Request["id"], out id)) return;
-            Model = _context.Users.FirstOrDefault(user => user.UserID == id);
+            Model = _context.Users.FirstOrDefault(user => user.ID == id);
         }
 
         public User LoadModel()

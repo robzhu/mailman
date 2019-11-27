@@ -8,7 +8,7 @@ namespace Mailman.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int MailingListID { get; set; }
+        public int ID { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public virtual ICollection<User> Subscribers { get; set; } = new HashSet<User>();

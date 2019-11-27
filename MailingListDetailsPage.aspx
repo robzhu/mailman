@@ -16,14 +16,14 @@
                     <ItemTemplate>
                         <div style="display: grid; grid: auto / 30rem 20rem 12rem">
                             <div>
-                                <a href="/UserDetailsPage.aspx?id=<%#: Item.UserID %>">
+                                <a href="/UserDetailsPage.aspx?id=<%#: Item.ID %>">
                                     <%#: Item.EmailAddress %>
                                 </a>
                             </div>
                             <p>
                                 <%#: Item.FirstName %>, <%#: Item.LastName %>
                             </p>
-                            <asp:LinkButton ID="buttonUnsubscribe" runat="server" OnCommand="buttonUnsubscribe_Command" CommandArgument="<%#: Item.UserID %>">
+                            <asp:LinkButton ID="buttonUnsubscribe" runat="server" OnCommand="buttonUnsubscribe_Command" CommandArgument="<%#: Item.ID %>">
                                 Unsubscribe
                             </asp:LinkButton>
                         </div>

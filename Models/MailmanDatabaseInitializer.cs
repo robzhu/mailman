@@ -12,7 +12,7 @@ namespace Mailman.Models
 
         private static User User_Annie = new User
         {
-            UserID = 1,
+            ID = 1,
             FirstName = "Annie",
             LastName = "Adams",
             EmailAddress = "aa@mail.com"
@@ -20,7 +20,7 @@ namespace Mailman.Models
 
         private static User User_Bob = new User
         {
-            UserID = 2,
+            ID = 2,
             FirstName = "Bob",
             LastName = "Barker",
             EmailAddress = "bb@mail.com"
@@ -28,7 +28,7 @@ namespace Mailman.Models
 
         private static User User_Chris = new User
         {
-            UserID = 3,
+            ID = 3,
             FirstName = "Christopher",
             LastName = "Colombus",
             EmailAddress = "cc@mail.com"
@@ -36,7 +36,7 @@ namespace Mailman.Models
 
         private static User User_Danny = new User
         {
-            UserID = 4,
+            ID = 4,
             FirstName = "Danny",
             LastName = "DeVito",
             EmailAddress = "dd@mail.com"
@@ -53,14 +53,14 @@ namespace Mailman.Models
         {
             yield return new MailingList
             {
-                MailingListID = 1,
+                ID = 1,
                 Name = "Cat Facts",
                 Description = "Every day, we send an interesting fact about cats",
                 Subscribers = new List<User>(SeedUsers().Take(3))
             };
             yield return new MailingList
             {
-                MailingListID = 2,
+                ID = 2,
                 Name = "Emacs vs. Vim Debate Club",
                 Description = "Let's get ready to rumble!",
                 Subscribers = new List<User>(SeedUsers().Skip(2))

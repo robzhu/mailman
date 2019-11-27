@@ -36,14 +36,14 @@
             <ItemTemplate>
                 <div style="display: grid; grid: auto / 40rem 12rem 12rem">
                     <div style="font-size: large; font-style: normal;">
-                        <a href="/MailingListDetailsPage.aspx?id=<%#: Item.MailingListID %>">
+                        <a href="/MailingListDetailsPage.aspx?id=<%#: Item.ID %>">
                             <%#: Item.Name %>
                         </a>
                     </div>
-                    <asp:LinkButton ID="listDetails" runat="server" OnCommand="listDetails_Click" CommandArgument="<%#: Item.MailingListID %>">
+                    <asp:LinkButton ID="listDetails" runat="server" OnCommand="listDetails_Click" CommandArgument="<%#: Item.ID %>">
                         Details
                     </asp:LinkButton>
-                    <asp:LinkButton ID="listDelete" runat="server" OnCommand="listDelete_Click" CommandArgument="<%#: Item.MailingListID %>">
+                    <asp:LinkButton ID="listDelete" runat="server" OnCommand="listDelete_Click" CommandArgument="<%#: Item.ID %>">
                         Delete
                     </asp:LinkButton>
                 </div>

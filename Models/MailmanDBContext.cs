@@ -14,7 +14,7 @@ namespace Mailman.Models
 
         public bool DeleteList(int id)
         {
-            var matchingList = MailingLists.FirstOrDefault(ml => ml.MailingListID == id);
+            var matchingList = MailingLists.FirstOrDefault(ml => ml.ID == id);
             if (matchingList == null) return false;
             MailingLists.Remove(matchingList);
             SaveChanges();
@@ -52,7 +52,7 @@ namespace Mailman.Models
 
         public void UnsubscribeUserFrom(User user, int listID)
         {
-            var matchingList = MailingLists.FirstOrDefault(list => list.MailingListID == listID);
+            var matchingList = MailingLists.FirstOrDefault(list => list.ID == listID);
             if (matchingList == null) return;
             user.Lists.Remove(matchingList);
             SaveChanges();
@@ -71,7 +71,7 @@ namespace Mailman.Models
 
         public void SubscribeUserToList(User user, int listID)
         {
-            var matchingList = MailingLists.FirstOrDefault(list => list.MailingListID == listID);
+            var matchingList = MailingLists.FirstOrDefault(list => list.ID == listID);
             if (matchingList == null) throw new Exception("List does not exist");
             user.Lists.Add(matchingList);
             SaveChangesAsync();

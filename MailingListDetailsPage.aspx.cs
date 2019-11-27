@@ -17,7 +17,7 @@ namespace Mailman
             if (string.IsNullOrEmpty(idFromQueryString)) return;
             int id = -1;
             if (!int.TryParse(Request["id"], out id)) return;
-            Model = _context.MailingLists.FirstOrDefault(list => list.MailingListID == id);
+            Model = _context.MailingLists.FirstOrDefault(list => list.ID == id);
         }
 
         public MailingList LoadModel()
@@ -33,7 +33,7 @@ namespace Mailman
         protected void buttonUnsubscribe_Command(object sender, CommandEventArgs e)
         {
             int userID = int.Parse(e.CommandArgument as string);
-            var matchingUser = Model.Subscribers.FirstOrDefault(user => user.UserID == userID);
+            var matchingUser = Model.Subscribers.FirstOrDefault(user => user.ID == userID);
             if (matchingUser == null) throw new Exception("No matching user found");
 
             Model.Subscribers.Remove(matchingUser);

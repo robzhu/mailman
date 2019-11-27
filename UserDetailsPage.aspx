@@ -14,11 +14,11 @@
                     <ItemTemplate>
                         <div style="display: grid; grid: auto / 40rem 12rem 12rem">
                             <div>
-                                <a href="/MailingListDetailsPage.aspx?id=<%#: Item.MailingListID %>">
+                                <a href="/MailingListDetailsPage.aspx?id=<%#: Item.ID %>">
                                     <%#: Item.Name %>
                                 </a>
                             </div>
-                            <asp:LinkButton ID="buttonUnsubscribe" runat="server" OnCommand="buttonUnsubscribe_Command" CommandArgument="<%#: Item.MailingListID %>">
+                            <asp:LinkButton ID="buttonUnsubscribe" runat="server" OnCommand="buttonUnsubscribe_Command" CommandArgument="<%#: Item.ID %>">
                                 Unsubscribe
                             </asp:LinkButton>
                         </div>
@@ -41,11 +41,11 @@
                     <ItemTemplate>
                         <div style="display: grid; grid: auto / 40rem 12rem 12rem">
                             <div>
-                                <a href="/MailingListDetailsPage.aspx?id=<%#: Item.MailingListID %>">
+                                <a href="/MailingListDetailsPage.aspx?id=<%#: Item.ID %>">
                                     <%#: Item.Name %>
                                 </a>
                             </div>
-                            <asp:LinkButton ID="buttonSubscribe" runat="server" OnCommand="buttonSubscribe_Command" CommandArgument="<%#: Item.MailingListID %>">
+                            <asp:LinkButton ID="buttonSubscribe" runat="server" OnCommand="buttonSubscribe_Command" CommandArgument="<%#: Item.ID %>">
                                 Subscribe
                             </asp:LinkButton>
                         </div>
@@ -59,8 +59,6 @@
                 </asp:ListView>
             </div>
 
-            <%--Add
-            Remove--%>
         </ItemTemplate>
     </asp:FormView>
 </asp:Content>

@@ -35,7 +35,7 @@
             <ItemTemplate>
                 <div style="display: grid; grid: auto / 30rem 20rem">
                     <div style="font-size: large; font-style: normal;">
-                        <a href="/UserDetailsPage.aspx?id=<%#: Item.UserID %>">
+                        <a href="/UserDetailsPage.aspx?id=<%#: Item.ID %>">
                             <%#: Item.EmailAddress %>
                         </a>
                     </div>
