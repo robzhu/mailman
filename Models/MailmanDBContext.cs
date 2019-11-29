@@ -74,7 +74,7 @@ namespace Mailman.Models
             var matchingList = MailingLists.FirstOrDefault(list => list.ID == listID);
             if (matchingList == null) throw new Exception("List does not exist");
             user.Lists.Add(matchingList);
-            SaveChangesAsync();
+            SaveChanges();
         }
     }
 }
